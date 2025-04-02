@@ -1,63 +1,57 @@
 import React from 'react';
-import { FaCode, FaDatabase, FaTools, FaCloud } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaTools, FaCloud, FaCogs, FaFlask, FaLayerGroup, FaTasks, FaWrench } from 'react-icons/fa';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Front-End",
       icon: <FaCode className="text-2xl" />,
-      skills: [
-        "React.js",
-        "JavaScript (ES6+)",
-        "TypeScript",
-        "HTML5",
-        "CSS3",
-        "Tailwind CSS",
-        "Material-UI",
-        "Redux",
-        "Responsive Design"
-      ]
+      skills: ["JavaScript", "TypeScript", "HTML5", "CSS3", "AJAX", "JSON", "XML"]
     },
     {
-      title: "Backend Development",
+      title: "Back-End",
+      icon: <FaCogs className="text-2xl" />,
+      skills: ["Java (17, 11, 8)", "SQL", "Node.js", "Express.js", "C#", "C", "Python"]
+    },
+    {
+      title: "Databases",
       icon: <FaDatabase className="text-2xl" />,
-      skills: [
-        "Node.js",
-        "Express.js",
-        "RESTful APIs",
-        "MongoDB",
-        "SQL",
-        "Firebase",
-        "Authentication",
-        "Authorization"
-      ]
+      skills: ["MS SQL Server", "Oracle", "MySQL", "Mongo DB", "PostgreSQL", "NoSQL"]
     },
     {
-      title: "Tools & Practices",
-      icon: <FaTools className="text-2xl" />,
-      skills: [
-        "Git",
-        "GitHub",
-        "VS Code",
-        "npm/yarn",
-        "Webpack",
-        "Jest",
-        "Agile/Scrum",
-        "CI/CD"
-      ]
+      title: "J2EE Technologies",
+      icon: <FaCode className="text-2xl" />,
+      skills: ["JSP", "JPA", "JavaBeans", "JDBC"]
     },
     {
-      title: "Cloud & DevOps",
+      title: "Frameworks",
+      icon: <FaLayerGroup className="text-2xl" />,
+      skills: ["React.js", "Angular.js", "Vue.js", "Spring Boot", "Bootstrap", "Spring MVC", "jQuery"]
+    },
+    {
+      title: "Testing Tools",
+      icon: <FaFlask className="text-2xl" />,
+      skills: ["Selenium", "JUnit", "Jest"]
+    },
+    {
+      title: "Cloud Platforms",
       icon: <FaCloud className="text-2xl" />,
-      skills: [
-        "AWS",
-        "Docker",
-        "Kubernetes",
-        "Jenkins",
-        "Microservices",
-        "Cloud Architecture",
-        "Linux"
-      ]
+      skills: ["AWS (EC2, SNS, RDS, Cloud Watch)", "Google Cloud Platform", "Microsoft Azure (Azure Data Lake, Azure Data Factory, Blob Storage)"]
+    },
+    {
+      title: "CI/CD & DevOps Tools",
+      icon: <FaTools className="text-2xl" />,
+      skills: ["Jenkins", "Git", "GitHub", "GitLab", "Docker", "Kubernetes", "Swagger UI", "Terraform"]
+    },
+    {
+      title: "Methodologies",
+      icon: <FaTasks className="text-2xl" />,
+      skills: ["Agile", "Waterfall", "SDLC", "Kanban"]
+    },
+    {
+      title: "Others",
+      icon: <FaWrench className="text-2xl" />,
+      skills: ["Microservices", "Jira", "Confluence", "IntelliJ IDEA", "Eclipse", "VS Code", "Java Networking", "RESTful API", "Postman API"]
     }
   ];
 
