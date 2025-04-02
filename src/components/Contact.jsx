@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   const contactLinks = [
@@ -8,6 +8,12 @@ const Contact = () => {
       label: "Email",
       href: "mailto:yamini.a@protectmymails.com",
       text: "yamini.a@protectmymails.com"
+    },
+    {
+      icon: <FaLinkedin className="text-2xl" />,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/yamini-ashokkumar/",
+      text: "yamini-ashokkumar"
     },
     {
       icon: <FaGithub className="text-2xl" />,
