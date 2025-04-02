@@ -5,17 +5,15 @@ const Education = () => {
   const education = [
     {
       degree: "Master of Computer Information Systems",
-      school: "University of Missouri - Kansas City",
-      location: "Kansas City, MO",
-      date: "2023 - Present",
-      description: "Focusing on advanced software development and system architecture"
+      school: "Northwest Missouri State University",
+      location: "Maryville, MO",
+      date: "Aug 2023 - Dec 2024"
     },
     {
-      degree: "Bachelor of Technology in Computer Science",
-      school: "Jawaharlal Nehru Technological University",
-      location: "Hyderabad, India",
-      date: "2016 - 2020",
-      description: "Specialized in software engineering and web technologies"
+      degree: "Bachelor in Information Technology",
+      school: "Annamacharya Institute of technology and sciences",
+      location: "Tirupati, India",
+      date: "2016 - 2020"
     }
   ];
 
@@ -37,7 +35,6 @@ const Education = () => {
                   <p className="text-lg font-semibold">{edu.school}</p>
                   <p className="text-textSecondary">{edu.location}</p>
                   <p className="text-textSecondary">{edu.date}</p>
-                  <p className="text-textSecondary mt-2">{edu.description}</p>
                 </div>
               </div>
             </div>
