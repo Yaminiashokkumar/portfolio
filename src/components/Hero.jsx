@@ -1,17 +1,17 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
-import heroImage from '../assets/profile.jpg';
+import profileImage from '../assets/profile.jpg';
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800">
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col items-center">
-          <div className="w-48 h-48 mb-8 relative">
+          <div className="w-48 h-48 mb-8 relative rounded-full overflow-hidden border-4 border-purple-500 shadow-xl">
             <img 
-              src={heroImage} 
-              alt="Yamini Ashokkumar" 
-              className="w-full h-full rounded-full object-cover border-4 border-purple-500 shadow-xl"
+              src={profileImage} 
+              alt="Yamini Ashokkumar"
+              className="w-full h-full object-cover"
             />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 text-center font-poppins animate-fadeIn">
