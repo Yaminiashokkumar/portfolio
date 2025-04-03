@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
       colors: {
         primary: '#2563eb',    // Bright blue
         secondary: '#7c3aed',  // Vibrant purple
@@ -14,9 +18,6 @@ module.exports = {
         textSecondary: '#8892b0',
         darkBg: '#020c1b',
         cardBg: '#112240',
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
         fadeIn: 'fadeIn 0.5s ease-in',
