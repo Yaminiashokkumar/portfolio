@@ -12,16 +12,14 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-16 bg-gray-800">
+    <section id="education" className="py-16 bg-[#151923]">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white mb-8 text-center font-poppins">
-          My Academic Journey
-        </h2>
+        <h2 className="section-title text-center mb-12">My Academic Journey</h2>
         <div className="max-w-2xl mx-auto">
           {education.map((edu, index) => (
-            <div key={index} className="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div key={index} className="bg-[#1a1f2e] rounded-lg p-6 shadow-lg border border-purple-500/10">
               <div className="flex items-start gap-4">
-                <FaGraduationCap className="text-3xl text-purple-400 mt-1" />
+                <FaGraduationCap className="text-3xl text-purple-500 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-white">{edu.degree}</h3>
                   <p className="text-lg text-purple-300">{edu.school}</p>

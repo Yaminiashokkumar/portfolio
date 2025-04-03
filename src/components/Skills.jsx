@@ -10,17 +10,15 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-16 bg-gray-900">
+    <section id="skills" className="py-16 bg-[#1a1f2e]">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center font-poppins">
-          Technical Expertise
-        </h2>
+        <h2 className="section-title text-center mb-12">Technical Expertise</h2>
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap gap-4 justify-center">
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="px-4 py-2 bg-gray-800 text-purple-300 rounded-full hover:bg-purple-700 hover:text-white transition-colors cursor-default"
+                className="px-4 py-2 bg-[#151923] text-gray-300 rounded-full border border-purple-500/10 hover:border-purple-500 hover:text-white transition-all duration-300 cursor-default"
               >
                 {skill}
               </div>
