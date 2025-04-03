@@ -21,11 +21,13 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="pt-16">
+    <section id="contact" className="py-16 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="section-title">Let's Connect!</h2>
-        <div className="mt-8 max-w-2xl mx-auto">
-          <div className="card p-6 hover:shadow-lg transition-shadow duration-300">
+        <h2 className="text-4xl font-bold text-white mb-8 text-center font-poppins">
+          Let's Connect
+        </h2>
+        <div className="max-w-md mx-auto">
+          <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
             <div className="space-y-4">
               {contactLinks.map((link, index) => (
                 <a
@@ -33,7 +35,7 @@ const Contact = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-primary hover:text-secondary transition-colors"
+                  className="flex items-center gap-3 text-purple-300 hover:text-white transition-colors"
                 >
                   {link.icon}
                   <span>{link.text}</span>

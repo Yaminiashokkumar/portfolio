@@ -1,87 +1,31 @@
 import React from 'react';
-import { FaCode, FaDatabase, FaTools, FaCloud, FaCogs, FaFlask, FaLayerGroup, FaTasks, FaWrench } from 'react-icons/fa';
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Front-End",
-      icon: <FaCode className="text-2xl" />,
-      skills: ["JavaScript", "TypeScript", "HTML5", "CSS3", "AJAX", "JSON", "XML"]
-    },
-    {
-      title: "Back-End",
-      icon: <FaCogs className="text-2xl" />,
-      skills: ["Java (17, 11, 8)", "SQL", "Node.js", "Express.js", "C#", "C", "Python"]
-    },
-    {
-      title: "Databases",
-      icon: <FaDatabase className="text-2xl" />,
-      skills: ["MS SQL Server", "Oracle", "MySQL", "Mongo DB", "PostgreSQL", "NoSQL"]
-    },
-    {
-      title: "J2EE Technologies",
-      icon: <FaCode className="text-2xl" />,
-      skills: ["JSP", "JPA", "JavaBeans", "JDBC"]
-    },
-    {
-      title: "Frameworks",
-      icon: <FaLayerGroup className="text-2xl" />,
-      skills: ["React.js", "Angular.js", "Vue.js", "Spring Boot", "Bootstrap", "Spring MVC", "jQuery"]
-    },
-    {
-      title: "Testing Tools",
-      icon: <FaFlask className="text-2xl" />,
-      skills: ["Selenium", "JUnit", "Jest"]
-    },
-    {
-      title: "Cloud Platforms",
-      icon: <FaCloud className="text-2xl" />,
-      skills: ["AWS (EC2, SNS, RDS, Cloud Watch)", "Google Cloud Platform", "Microsoft Azure (Azure Data Lake, Azure Data Factory, Blob Storage)"]
-    },
-    {
-      title: "CI/CD & DevOps Tools",
-      icon: <FaTools className="text-2xl" />,
-      skills: ["Jenkins", "Git", "GitHub", "GitLab", "Docker", "Kubernetes", "Swagger UI", "Terraform"]
-    },
-    {
-      title: "Methodologies",
-      icon: <FaTasks className="text-2xl" />,
-      skills: ["Agile", "Waterfall", "SDLC", "Kanban"]
-    },
-    {
-      title: "Others",
-      icon: <FaWrench className="text-2xl" />,
-      skills: ["Microservices", "Jira", "Confluence", "IntelliJ IDEA", "Eclipse", "VS Code", "Java Networking", "RESTful API", "Postman API"]
-    }
+  const skills = [
+    'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'React.js', 'Angular.js', 'Vue.js',
+    'Java (17, 11, 8)', 'Spring Boot', 'Node.js', 'Express.js', 'C#', 'Python',
+    'MySQL', 'PostgreSQL', 'MongoDB', 'Oracle', 'MS SQL Server',
+    'AWS', 'Azure', 'Docker', 'Kubernetes', 'Jenkins', 'Git',
+    'JUnit', 'Jest', 'Selenium', 'REST APIs', 'Microservices'
   ];
 
   return (
-    <section id="skills" className="pt-16">
-      <div className="container mx-auto">
-        <div className="mb-8">
-          <h2 className="section-title">Technical Expertise!</h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="card hover:shadow-lg transition-shadow duration-300">
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  {category.icon}
-                  <h3 className="text-xl font-bold text-secondary">{category.title}</h3>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, i) => (
-                    <span
-                      key={i}
-                      className="bg-secondary/10 text-secondary px-3 py-1 rounded-md text-sm"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
+    <section id="skills" className="py-16 bg-gray-900">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-white mb-12 text-center font-poppins">
+          Technical Expertise
+        </h2>
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-wrap gap-4 justify-center">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="px-4 py-2 bg-gray-800 text-purple-300 rounded-full hover:bg-purple-700 hover:text-white transition-colors cursor-default"
+              >
+                {skill}
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
