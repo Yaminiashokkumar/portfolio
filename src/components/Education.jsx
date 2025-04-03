@@ -8,33 +8,23 @@ const Education = () => {
       school: "Northwest Missouri State University",
       location: "Maryville, MO",
       date: "Aug 2023 - Dec 2024"
-    },
-    {
-      degree: "Bachelor in Information Technology",
-      school: "Annamacharya Institute of technology and sciences",
-      location: "Tirupati, India",
-      date: "2016 - 2020"
     }
   ];
 
   return (
     <section id="education" className="pt-16">
-      <div className="container mx-auto">
-        <div className="mb-8">
-          <h2 className="section-title">My Academic Journey!</h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6">
+      <div className="container mx-auto px-4">
+        <h2 className="section-title">My Academic Journey!</h2>
+        <div className="mt-8">
           {education.map((edu, index) => (
-            <div key={index} className="card hover:shadow-lg transition-shadow duration-300">
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <FaGraduationCap className="text-2xl text-secondary" />
-                  <h3 className="text-xl font-bold text-secondary">{edu.degree}</h3>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-lg font-semibold">{edu.school}</p>
-                  <p className="text-textSecondary">{edu.location}</p>
-                  <p className="text-textSecondary">{edu.date}</p>
+            <div key={index} className="card p-6 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-start gap-4">
+                <FaGraduationCap className="text-3xl text-secondary mt-1" />
+                <div>
+                  <h3 className="text-xl font-bold text-primary">{edu.degree}</h3>
+                  <p className="text-lg text-gray-700">{edu.school}</p>
+                  <p className="text-gray-600">{edu.location}</p>
+                  <p className="text-gray-500 mt-1">{edu.date}</p>
                 </div>
               </div>
             </div>
